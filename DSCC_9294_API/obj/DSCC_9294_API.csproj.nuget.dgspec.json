@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\J.Fayzullayev\\Desktop\\Cloud\\Sample\\DSCC_9294_API\\DSCC_9294_API.csproj": {}
+    "C:\\Users\\J.Fayzullayev\\Desktop\\DSCC.CW1.9294\\Sample\\DSCC_9294_API\\DSCC_9294_API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\J.Fayzullayev\\Desktop\\Cloud\\Sample\\DSCC_9294_API\\DSCC_9294_API.csproj": {
+    "C:\\Users\\J.Fayzullayev\\Desktop\\DSCC.CW1.9294\\Sample\\DSCC_9294_API\\DSCC_9294_API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\J.Fayzullayev\\Desktop\\Cloud\\Sample\\DSCC_9294_API\\DSCC_9294_API.csproj",
+        "projectUniqueName": "C:\\Users\\J.Fayzullayev\\Desktop\\DSCC.CW1.9294\\Sample\\DSCC_9294_API\\DSCC_9294_API.csproj",
         "projectName": "DSCC_9294_API",
-        "projectPath": "C:\\Users\\J.Fayzullayev\\Desktop\\Cloud\\Sample\\DSCC_9294_API\\DSCC_9294_API.csproj",
+        "projectPath": "C:\\Users\\J.Fayzullayev\\Desktop\\DSCC.CW1.9294\\Sample\\DSCC_9294_API\\DSCC_9294_API.csproj",
         "packagesPath": "C:\\Users\\J.Fayzullayev\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\J.Fayzullayev\\Desktop\\Cloud\\Sample\\DSCC_9294_API\\obj\\",
+        "outputPath": "C:\\Users\\J.Fayzullayev\\Desktop\\DSCC.CW1.9294\\Sample\\DSCC_9294_API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\J.Fayzullayev\\AppData\\Roaming\\NuGet\\NuGet.Config",

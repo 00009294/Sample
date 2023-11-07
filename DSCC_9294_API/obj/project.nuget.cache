@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OE++ZpcxbuKhkfv3FDnwi/HhEZEx/kwHEUxHTnnU7M3LAAcCbjFu/3sg+y2cJh4a9j8uLyngp5O1mp56CCI8Og==",
+  "dgSpecHash": "ynfYXAFhzqrB1qQwh8GwqmAe5ZqrCdc8Upoxjkxgfiij7IjTHPhSKCmvBykTDdId8CCAZouFQ0jiNwqXL9pd0A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\J.Fayzullayev\\Desktop\\Cloud\\Sample\\DSCC_9294_API\\DSCC_9294_API.csproj",
+  "projectFilePath": "C:\\Users\\J.Fayzullayev\\Desktop\\DSCC.CW1.9294\\Sample\\DSCC_9294_API\\DSCC_9294_API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\J.Fayzullayev\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\J.Fayzullayev\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
