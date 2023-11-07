@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace DSCC_9294_API.Controllers;
 
-[Route("api/cars")]
+[Route("api/[controller]/[action]")]
 [ApiController]
 public class CarController : ControllerBase
 {
@@ -46,22 +46,15 @@ public class CarController : ControllerBase
         return CreatedAtAction(nameof(Get), new { id = car.Id }, car);
     }
 
-    [HttpPut("{id}")]
-    public async Task<IActionResult> Put(int id, [FromBody] Car car)
+    [HttpPut]
+    public async Task<IActionResult> Put([FromBody] Car car)
     {
-        if (car == null || id != car.Id)
+        var res = await _carService.UpdateAsync(car);
+        if (res == true)
         {
-            return BadRequest();
+            return Ok("Updated");
         }
-
-        var existingCar = await _carService.GetAsync(id);
-        if (existingCar == null)
-        {
-            return NotFound();
-        }
-
-        await _carService.UpdateAsync(car);
-        return NoContent();
+        return BadRequest(res);
     }
 
     [HttpDelete("{id}")]
@@ -77,5 +70,3 @@ public class CarController : ControllerBase
         return NoContent();
     }
 }
-    
-

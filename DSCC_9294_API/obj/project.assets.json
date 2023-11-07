@@ -3338,25 +3338,26 @@
       "Microsoft.AspNetCore.OpenApi >= 7.0.13",
       "Microsoft.EntityFrameworkCore >= 7.0.13",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.13",
+      "Microsoft.EntityFrameworkCore.Relational >= 7.0.13",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.13",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.13",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\fayzu\\.nuget\\packages\\": {}
+    "C:\\Users\\J.Fayzullayev\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fayzu\\source\\repos\\DSCC_9294_API\\DSCC_9294_API\\DSCC_9294_API.csproj",
+      "projectUniqueName": "C:\\Users\\J.Fayzullayev\\Desktop\\Cloud\\Sample\\DSCC_9294_API\\DSCC_9294_API.csproj",
       "projectName": "DSCC_9294_API",
-      "projectPath": "C:\\Users\\fayzu\\source\\repos\\DSCC_9294_API\\DSCC_9294_API\\DSCC_9294_API.csproj",
-      "packagesPath": "C:\\Users\\fayzu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fayzu\\source\\repos\\DSCC_9294_API\\DSCC_9294_API\\obj\\",
+      "projectPath": "C:\\Users\\J.Fayzullayev\\Desktop\\Cloud\\Sample\\DSCC_9294_API\\DSCC_9294_API.csproj",
+      "packagesPath": "C:\\Users\\J.Fayzullayev\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\J.Fayzullayev\\Desktop\\Cloud\\Sample\\DSCC_9294_API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\fayzu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\J.Fayzullayev\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3396,6 +3397,10 @@
             "target": "Package",
             "version": "[7.0.13, )"
           },
+          "Microsoft.EntityFrameworkCore.Relational": {
+            "target": "Package",
+            "version": "[7.0.13, )"
+          },
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "[7.0.13, )"
@@ -3430,7 +3435,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

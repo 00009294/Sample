@@ -33,9 +33,9 @@ namespace DSCC_9294_API.Services
 
         public async Task<bool> UpdateAsync(Car car)
         {
-            _dbContext.Entry(car).State = EntityState.Modified;
-            await _dbContext.SaveChangesAsync();
-            return true;
+            _dbContext.Update(car);
+            var res = await _dbContext.SaveChangesAsync();
+            return res > 0;
         }
 
         public async Task<bool> DeleteAsync(int id)

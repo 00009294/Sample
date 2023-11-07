@@ -26,16 +26,22 @@ namespace DSCC_9294_API.Services
 
         public async Task<bool> CreateAsync(Owner owner)
         {
-            _dbContext.Owner.Add(owner);
-            await _dbContext.SaveChangesAsync();
+            var carId = owner.CarId;
+            var car = await _dbContext.Car.FirstOrDefaultAsync(c => c.Id == carId);
+            if (car != null)
+            {
+                _dbContext.Owner.Add(owner);
+                await _dbContext.SaveChangesAsync();
+            }
+
             return true;
         }
 
         public async Task<bool> UpdateAsync(Owner owner)
         {
-            _dbContext.Entry(owner).State = EntityState.Modified;
-            await _dbContext.SaveChangesAsync();
-            return true;
+            _dbContext.Update(owner);
+            var res = await _dbContext.SaveChangesAsync();
+            return res > 0;
         }
 
         public async Task<bool> DeleteAsync(int id)

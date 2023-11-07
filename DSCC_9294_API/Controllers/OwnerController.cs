@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace DSCC_9294_API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class OwnerController : ControllerBase
     {
@@ -19,19 +19,19 @@ namespace DSCC_9294_API.Controllers
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            var Owners = await _ownerService.GetAllAsync();
-            return Ok(Owners);
+            var owners = await _ownerService.GetAllAsync();
+            return Ok(owners);
         }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(int id)
         {
-            var owner = await _ownerService.GetAsync(id);
-            if (owner == null)
+            var owners = await _ownerService.GetAsync(id);
+            if (owners == null)
             {
                 return NotFound();
             }
-            return Ok(owner);
+            return Ok(owners);
         }
 
         [HttpPost]
@@ -46,29 +46,22 @@ namespace DSCC_9294_API.Controllers
             return CreatedAtAction(nameof(Get), new { id = owner.Id }, owner);
         }
 
-        [HttpPut("{id}")]
-        public async Task<IActionResult> Put(int id, [FromBody] Owner Owner)
+        [HttpPut]
+        public async Task<IActionResult> Put([FromBody] Owner owner)
         {
-            if (Owner == null || id != Owner.Id)
+            var res = await _ownerService.UpdateAsync(owner);
+            if (res == true)
             {
-                return BadRequest();
+                return Ok("updated");
             }
-
-            var existingOwner = await _ownerService.GetAsync(id);
-            if (existingOwner == null)
-            {
-                return NotFound();
-            }
-
-            await _ownerService.UpdateAsync(Owner);
-            return NoContent();
+            return BadRequest();
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var Owner = await _ownerService.GetAsync(id);
-            if (Owner == null)
+            var owner = await _ownerService.GetAsync(id);
+            if (owner == null)
             {
                 return NotFound();
             }
