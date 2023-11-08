@@ -5,8 +5,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace DSCC_9294_API.Controllers;
 
-[Route("api/[controller]/[action]")]
 [ApiController]
+[Route("api/[controller]/[action]")]
 public class CarController : ControllerBase
 {
     private readonly ICarService _carService;
